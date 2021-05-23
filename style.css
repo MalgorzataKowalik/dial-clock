@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {    
+    font-size: 10px;
+}
+
+body {
+    height: 100vh;
+    background-image: url(green-monstera-leaves-nature.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.clock {
+    width: 90vw;
+    height: 90vw;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.3);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.hand {
+    background-color: #000;
+    position: absolute;
+    left: 50%;
+    top: 10%;
+    transform: translateX(-50%);
+    transform-origin: 50% 100%;
+}
+
+.hour-hand {
+    height: 30%;
+    width: 2vw;
+    top: 20%;
+}
+
+.min-hand {
+    height: 40%;
+    width: 1.5vw;
+}
+
+.second-hand {
+    height: 40%;
+    width: 0.5vw;
+    background-color: #333;
+}
+
+@media (orientation: landscape) {
+    .clock {
+        width: 90vh;
+        height: 90vh;
+    }
+    .hour-hand {
+        width: 2vh;
+    }
+    
+    .min-hand {
+        width: 1.5vh;
+    }
+    
+    .second-hand {
+        width: 0.5vh;
+    }
+}
+
+@media (orientation: landscape) and (min-width: 1000px) {
+    .clock {
+        width: 65vh;
+        height: 65vh;
+    }
+    .hour-hand {
+        width: 1vh;
+    }
+    
+    .min-hand {
+        width: 0.75vh;
+    }
+    
+    .second-hand {
+        width: 0.25vh;
+    }
+}
